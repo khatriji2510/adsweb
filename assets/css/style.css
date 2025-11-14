@@ -158,19 +158,29 @@ a {
     font-weight: bold;
 }
 
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    background: #000;
-    border-radius: 8px;
-    overflow: hidden;
-}
+/* Play button overlay + video wrapper adjustments */
+.video-wrapper { position: relative; width: 100%; background:#000; border-radius:8px; overflow:hidden; }
+.video-wrapper iframe { width:100%; height:420px; border:0; display:block; }
 
-.video-wrapper iframe {
-    width: 100%;
-    height: 420px;
-    border-radius: 8px;
+.player-btn {
+  position: absolute;
+  z-index: 50;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.72);
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: opacity .18s ease;
 }
+.player-btn:hover { background: rgba(0,0,0,0.85); }
+.player-btn.hidden { display:none; opacity:0; pointer-events:none; }
+
 
 /* Clickable overlay */
 .video-overlay-ad {
