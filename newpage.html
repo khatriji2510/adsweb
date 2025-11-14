@@ -64,25 +64,23 @@
 
         <h2 class="video-title">Watch – Jujutsu Kaisen Episode</h2>
 
-        <!-- VIDEO WRAPPER -->
-        <div class="video-wrapper">
+        <!-- VIDEO WRAPPER (lazy-load + one-time popunder) -->
+<div class="video-wrapper" id="videoWrapper">
+  <!-- Play button overlay (user clicks this) -->
+  <button id="playerBtn" class="player-btn" aria-label="Play video">► Play</button>
 
-            <!-- OVERLAY DIRECT LINK (Clickable Ad) -->
-            <a href="https://otieu.com/4/10185433" target="_blank" class="video-overlay-ad">
-                <!-- This overlay is optional and subtle -->
-            </a>
+  <!-- Lazy iframe: data-src holds actual OK.ru embed -->
+  <iframe
+    id="okPlayer"
+    data-src="https://ok.ru/videoembed/10646207990449?nochat=1"
+    src=""
+    frameborder="0"
+    allow="autoplay"
+    allowfullscreen
+    title="Jujutsu Kaisen Episode">
+  </iframe>
+</div>
 
-            <!-- PLAYER IFRAME -->
-            <iframe
-                width="100%"
-                height="400"
-                src="//ok.ru/videoembed/10646207990449?nochat=1"
-                frameborder="0"
-                allow="autoplay"
-                allowfullscreen>
-            </iframe>
-
-        </div>
 
         <!-- BELOW PLAYER BANNER -->
         <div class="ad-container below-player">
