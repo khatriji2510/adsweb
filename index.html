@@ -1,469 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJK News – Latest Anime & Manga Updates</title>
 
-  <script async="async" data-cfasync="false" src="//thubanoa.com/1?z=7083707"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <script src="https://alwingulla.com/88/tag.min.js" data-zone="44055" async data-cfasync="false"></script>
-  <meta name="monetag" content="af2b41aa8e654de6c51c2e4a70604abe"/>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JJKBlog - Your Source for Jujutsu Kaisen News</title>
+    <!-- Monetag: Push Notifications -->
+    <script src="https://3nbf4.com/act/files/tag.min.js?z=10185413" data-cfasync="false" async></script>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <!-- Monetag: In-Page Push -->
+    <script>(function(s){s.dataset.zone='10185430',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!-- Monetag: Vignette -->
+    <script>(function(s){s.dataset.zone='10185432',s.src='https://gizokraijaw.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Monetag: Interstitial -->
+    <script>(function(s){s.dataset.zone='10185431',s.src='https://groleegni.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 </head>
 
-<body class="light-theme">
+<body>
 
-  <!--
-    - #HEADER
-  -->
+<!-- TOP BANNER PLACEHOLDER -->
+<div class="ad-container top-banner">
+    <!-- Banner 728x90 -->
+    <!-- ADD YOUR BANNER CODE HERE -->
+</div>
 
-  <header>
+<header class="main-header">
+    <div class="logo">JJK NEWS</div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">Anime</a>
+        <a href="#">Manga</a>
+        <a href="#">Characters</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="right-actions">
+        <button id="searchBtn">🔍</button>
+        <button id="menuBtn" class="mobile-menu-btn">☰</button>
+    </div>
+</header>
 
-    <div class="container">
+<!-- SEARCH OVERLAY -->
+<div id="searchOverlay" class="search-overlay">
+    <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <button id="closeSearch">✖</button>
+    </div>
+</div>
 
-      <nav class="navbar">
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+    <button id="closeMenu" class="close-menu-btn">✖</button>
+    <a href="index.html">Home</a>
+    <a href="#">Anime</a>
+    <a href="#">Manga</a>
+    <a href="#">Characters</a>
+    <a href="#">Contact</a>
+</div>
 
-        <a href="#">
-          <img src="./assets/images/logo-light.svg" alt="JJKBlog's logo" width="150" height="40" class="logo-light">
-          <img src="./assets/images/logo-dark.svg" alt="JJKBlog's logo" width="150" height="40" class="logo-dark">
+<!-- CATEGORY BAR -->
+<div class="category-bar">
+    <a href="#">Latest</a>
+    <a href="#">Anime</a>
+    <a href="#">Manga</a>
+    <a href="#">Leaks</a>
+    <a href="#">Movie</a>
+</div>
+
+<div class="content-container">
+
+    <main class="main-content">
+
+        <h2 class="section-title">Latest JJK News</h2>
+
+        <!-- Article Card Example -->
+        <a href="newpage.html" class="article-card">
+            <img src="assets/images/jujutsu-kaisen-poster.jpg" alt="">
+            <div class="info">
+                <h3>Jujutsu Kaisen Season 2 – New Arc Shocking Reveal!</h3>
+                <p>Season 2 comes back with insane animation and crazy twists. Full coverage here.</p>
+            </div>
         </a>
 
-        <div class="btn-group">
-
-          <button class="theme-btn theme-btn-mobile light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-
-          <button class="nav-menu-btn">
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
-        </div>
-
-        <div class="flex-wrapper">
-
-          <ul class="desktop-nav">
-
-            <li>
-              <a href="#" class="nav-link">Home</a>
-            </li>
-
-            <li>
-              <a href="#" class="nav-link">About Us</a>
-            </li>
-
-            <li>
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn btn-secondary">DevBlog</a>
-
-          <button class="theme-btn theme-btn-desktop light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-
-        </div>
-
-        <div class="mobile-nav">
-
-          <button class="nav-close-btn">
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-          <div class="wrapper">
-
-            <p class="h3 nav-title">Main Menu</p>
-
-            <ul>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">About Us</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-              </li>
-            </ul>
-
-          </div>
-
-          <div>
-
-            <p class="h3 nav-title">Topics</p>
-
-            <ul>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Manga</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">Anime</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-
-      </nav>
-
-    </div>
-
-  </header>
-
-
-
-
-
-  <main>
-
-    <!--
-      - #HERO SECTION
-    -->
-
-    <div class="hero">
-
-      <div class="container">
-
-        <div class="left">
-
-          <h1 class="h1">
-            Welcome to <b>JJKBlog</b>.
-            <br>Your Source for Jujutsu Kaisen News
-          </h1>
-
-          <p class="h3">
-            Stay updated with the latest manga and anime news!
-          </p>
-
-          <div class="btn-group">
-            <a href="#" class="btn btn-primary">Contact Us</a>
-            <a href="#" class="btn btn-secondary">About Us</a>
-          </div>
-
-        </div>
-
-        <div class="right">
-
-          <div class="pattern-bg"></div>
-          <div class="img-box">
-            <img src="./assets/images/hero.png" alt="JJKBlog" class="hero-img">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-
-
-    <div class="main">
-
-      <div class="container">
-
-        <!--
-          - BLOG SECTION
-        -->
-
-        <div class="blog">
-
-          <h2 class="h2">Latest Jujutsu Kaisen News</h2>
-
-          <div class="blog-card-group">
-
-            <!-- News item 1 -->
-            <div class="blog-card">
-
-              <div class="blog-card-banner">
-                <img src="./assets/images/jujutsu-kaisen-poster.jpg" alt="Jujutsu Kaisen" width="250" class="blog-banner-img">
-              </div>
-
-              <div class="blog-content-wrapper">
-
-                <button class="blog-topic text-tiny">Anime</button>
-
-                <h3>
-                  <a href="#" class="h3">
-                    New Arc Announcement: Jujutsu Kaisen Season 2 Release Date Revealed!
-                  </a>
-                </h3>
-
-                <p class="blog-text">
-                  Exciting news for Jujutsu Kaisen fans! The release date for Season 2 has been officially announced, along with details about the upcoming arc. Get ready for more action-packed episodes!
-                </p>
-
-                <div class="wrapper-flex">
-
-                  <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="JJKBlog" width="50">
-                  </div>
-
-                  <div class="wrapper">
-                    <a href="#" class="h4">JJKBlog</a>
-
-                    <p class="text-sm">
-                      <time datetime="2024-02-10">Feb 10, 2024</time>
-                      <span class="separator"></span>
-                      <ion-icon name="time-outline"></ion-icon>
-                      <time datetime="PT3M">3 min</time>
-                    </p>
-                  </div>
-
-                </div>
-
-              </div>
-
+        <div class="article-card">
+            <img src="assets/images/jujutsu-kaisen-movie.jpg" alt="">
+            <div class="info">
+                <h3>JJK Movie 2 Confirmed – Plot Leaks!</h3>
+                <p>The studio is preparing another theatrical release. Details revealed.</p>
             </div>
+        </div>
 
-            <!-- News item 2 -->
-            <div class="blog-card">
+        <!-- IN ARTICLE BANNER PLACEHOLDER -->
+        <div class="ad-container mid-article">
+            <!-- 300x250 / 728x90 Banner -->
+            <!-- ADD YOUR BANNER CODE HERE -->
+        </div>
 
-              <div class="blog-card-banner">
-                <img src="./assets/images/jujutsu-kaisen-manga.jpg" alt="Jujutsu Kaisen Manga" width="250" class="blog-banner-img">
-              </div>
-
-              <div class="blog-content-wrapper">
-
-                <button class="blog-topic text-tiny">Manga</button>
-
-                <h3>
-                  <a href="#" class="h3">
-                    Latest Chapter Review: Shocking Revelations in Jujutsu Kaisen Manga Chapter 200!
-                  </a>
-                </h3>
-
-                <p class="blog-text">
-                  Chapter 200 of Jujutsu Kaisen delivers some unexpected twists and turns. Dive into our review to explore the shocking revelations and speculate on what's to come in the next chapters!
-                </p>
-
-                <div class="wrapper-flex">
-
-                  <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="JJKBlog" width="50">
-                  </div>
-
-                  <div class="wrapper">
-                    <a href="#" class="h4">JJKBlog</a>
-
-                    <p class="text-sm">
-                      <time datetime="2024-02-08">Feb 8, 2024</time>
-                      <span class="separator"></span>
-                      <ion-icon name="time-outline"></ion-icon>
-                      <time datetime="PT5M">5 min</time>
-                    </p>
-                  </div>
-
-                </div>
-
-              </div>
-
+        <div class="article-card">
+            <img src="assets/images/jujutsu-kaisen-manga.jpg" alt="">
+            <div class="info">
+                <h3>Manga Chapter 250 – Sukuna vs Everyone</h3>
+                <p>New chapter breakdown and insane fights explained in detail.</p>
             </div>
-
-            <!-- News item 3 -->
-            <div class="blog-card">
-
-              <div class="blog-card-banner">
-                <img src="./assets/images/jujutsu-kaisen-movie.jpg" alt="Jujutsu Kaisen Movie" width="250" class="blog-banner-img">
-              </div>
-
-              <div class="blog-content-wrapper">
-
-                <button class="blog-topic text-tiny">Anime</button>
-
-                <h3>
-                  <a href="#" class="h3">
-                    Jujutsu Kaisen Movie: Premiere Date and Plot Details Unveiled!
-                  </a>
-                </h3>
-
-                <p class="blog-text">
-                  Get ready for the big screen adaptation of Jujutsu Kaisen! The premiere date and plot details for the highly anticipated movie have been revealed. Find out what's in store for our favorite characters!
-                </p>
-
-                <div class="wrapper-flex">
-
-                  <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="JJKBlog" width="50">
-                  </div>
-
-                  <div class="wrapper">
-                    <a href="#" class="h4">JJKBlog</a>
-
-                    <p class="text-sm">
-                      <time datetime="2024-02-06">Feb 6, 2024</time>
-                      <span class="separator"></span>
-                      <ion-icon name="time-outline"></ion-icon>
-                      <time datetime="PT4M">4 min</time>
-                    </p>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- Add more news items here -->
-
-          </div>
-
-          <div class="btn-group">
-            <a href="#" class="btn btn-secondary">View All</a>
-          </div>
-
         </div>
 
-      </div>
+    </main>
 
-    </div>
+    <aside class="sidebar">
 
-  </main>
-
-
-
-
-
-  <footer>
-
-    <div class="container">
-
-      <div class="flex-wrapper">
-
-        <div>
-
-          <a href="#">
-            <img src="./assets/images/logo-light.svg" alt="JJKBlog's logo" width="150" height="40">
-          </a>
-
-          <p class="footer-text">
-            Your source for Jujutsu Kaisen news
-          </p>
-
+        <!-- SIDEBAR BANNER PLACEHOLDER -->
+        <div class="ad-container sidebar-banner">
+            <!-- 300x600 Banner -->
+            <!-- ADD YOUR BANNER CODE HERE -->
         </div>
 
-        <div>
+        <h3 class="sidebar-title">Trending Posts</h3>
 
-          <h5 class="h5">Quick Links</h5>
+        <a href="newpage.html" class="sidebar-post">Satoru Gojo Returns?</a>
+        <a href="#" class="sidebar-post">Yuta vs Sukuna — Who Wins?</a>
+        <a href="#" class="sidebar-post">JJK Manga Ends Soon?</a>
 
-          <ul>
-            <li>
-              <a href="#" class="footer-link">Home</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">About Us</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Contact</a>
-            </li>
-          </ul>
+        <h3 class="sidebar-title">Quick Links</h3>
+        <a class="sidebar-link" href="#">Anime Episodes</a>
+        <a class="sidebar-link" href="#">Manga Chapters</a>
+        <a class="sidebar-link" href="#">Characters</a>
 
-        </div>
+    </aside>
 
-        <div>
+</div>
 
-          <h5 class="h5">Topics</h5>
+<!-- STICKY FOOTER BANNER PLACEHOLDER -->
+<div class="sticky-footer-ad">
+    <!-- ADD YOUR BANNER CODE HERE -->
+</div>
 
-          <ul>
-            <li>
-              <a href="#" class="footer-link">Manga</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Anime</a>
-            </li>
-          </ul>
+<footer class="footer">
+    <p>© 2024 JJK NEWS — All Rights Reserved</p>
+</footer>
 
-        </div>
+<!-- JS -->
+<script src="assets/js/script.js"></script>
 
-        <div>
-
-          <h5 class="h5">Connect</h5>
-
-          <ul>
-            <li>
-              <a href="#" class="footer-link">Twitter</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Instagram</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Discord</a>
-            </li>
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-      <p class="text-sm">
-        &copy; 2024 JJKBlog. All rights reserved.
-      </p>
-
-      <div class="flex-wrapper">
-
-        <ul>
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#" class="footer-link">Terms of Service</a>
-          </li>
-        </ul>
-
-        <div>
-
-          <button class="theme-btn light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </footer>
-
-  <!--
-    - scripts
-  -->
-  <script src="./assets/js/app.min.js"></script>
+<!-- Monetag: POPUNDER -->
+<script>(function(s){s.dataset.zone='10185411',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 
 </body>
-
 </html>
