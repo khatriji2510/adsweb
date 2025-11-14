@@ -64,22 +64,25 @@
 
         <h2 class="video-title">Watch – Jujutsu Kaisen Episode</h2>
 
-        <!-- VIDEO WRAPPER (lazy-load + one-time popunder) -->
-<div class="video-wrapper" id="videoWrapper">
-  <!-- Play button overlay (user clicks this) -->
-  <button id="playerBtn" class="player-btn" aria-label="Play video">► Play</button>
-
-  <!-- Lazy iframe: data-src holds actual OK.ru embed -->
+        <!-- VIDEO WRAPPER: native OK poster + overlay which captures first click -->
+<div class="video-wrapper" id="videoWrapper" aria-label="Video player container">
+  <!-- The iframe loads immediately so OK's native thumbnail shows -->
   <iframe
     id="okPlayer"
-    data-src="https://ok.ru/videoembed/10646207990449?nochat=1"
-    src=""
+    src="https://ok.ru/videoembed/10646207990449?nochat=1"
     frameborder="0"
     allow="autoplay"
     allowfullscreen
     title="Jujutsu Kaisen Episode">
   </iframe>
+
+  <!-- Transparent overlay that captures the first click (then removed) -->
+  <div id="firstClickOverlay" class="first-click-overlay" role="button" tabindex="0" aria-label="Accept ad then play"></div>
+
+  <!-- Small notice that appears after first click to guide user -->
+  <div id="playHint" class="play-hint" aria-hidden="true">Tap the video again to play</div>
 </div>
+
 
 
         <!-- BELOW PLAYER BANNER -->
