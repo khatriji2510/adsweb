@@ -135,3 +135,89 @@ if (overlay) {
     // playerBtn.remove();
   }, { once: true }); // once:true ensures this handler only runs once for UX (but we still respect localStorage)
 })();
+
+/* =========================
+   ONE-TIME POPUNDER (native thumbnail flow)
+   - loads iframe from start so OK poster is visible
+   - captures first click via overlay, injects popunder once
+   - removes overlay so subsequent clicks go to player
+========================= */
+(function() {
+  const POPUNDER_KEY = 'jjk_popunder_shown';
+  const POPUNDER_EXPIRY_MS = 24 * 60 * 60 * 1000; // 24h - change if desired
+
+  const overlay = document.getElementById('firstClickOverlay');
+  const playHint = document.getElementById('playHint');
+
+  if (!overlay) return;
+
+  function hasValidFlag() {
+    try {
+      const raw = localStorage.getItem(POPUNDER_KEY);
+      if (!raw) return false;
+      const obj = JSON.parse(raw);
+      return obj && obj.t && (Date.now() - obj.t) < POPUNDER_EXPIRY_MS;
+    } catch (e) { return false; }
+  }
+
+  function setFlag() {
+    try { localStorage.setItem(POPUNDER_KEY, JSON.stringify({ t: Date.now() })); } catch (e) {}
+  }
+
+  function injectPopunder() {
+    // Use the popunder snippet you prefer — here we use zone 10185411 by default:
+    const s = document.createElement('script');
+    s.dataset.zone = '10185411';
+    s.src = 'https://al5sm.com/tag.min.js';
+    s.async = true;
+    document.body.appendChild(s);
+
+    // If you prefer the other popunder, comment above and uncomment below:
+    /*
+    const s2 = document.createElement('script');
+    s2.src = 'https://fpyf8.com/88/tag.min.js';
+    s2.dataset.zone = '185219';
+    s2.async = true;
+    document.body.appendChild(s2);
+    */
+  }
+
+  function handleFirstClick(e) {
+    // Prevent default behavior on overlay (just in case)
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Inject popunder only once per expiry period
+    if (!hasValidFlag()) {
+      injectPopunder();
+      setFlag();
+    }
+
+    // Remove overlay so future clicks reach the player iframe
+    overlay.remove();
+
+    // Show small hint so user knows to click again to actually play
+    if (playHint) {
+      playHint.classList.add('visible');
+      // Hide the hint after 3 seconds
+      setTimeout(() => playHint.classList.remove('visible'), 3000);
+    }
+
+    // Optionally, try to focus the iframe so user can click play quickly
+    const iframe = document.getElementById('okPlayer');
+    try {
+      if (iframe && iframe.focus) iframe.focus();
+    } catch(e) {
+      // ignore cross-origin focus errors
+    }
+  }
+
+  // Support both click and keyboard (Enter/Space)
+  overlay.addEventListener('click', handleFirstClick, { passive: false });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleFirstClick(e);
+    }
+  });
+})();
