@@ -372,3 +372,18 @@ a {
 @media (max-width:600px) {
   .video-wrapper iframe { height: 240px; }
 }
+
+
+.right-sidebar-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.sidebar-box {
+    width: 160px;
+    min-height: 600px;
+    background: transparent;
+}
