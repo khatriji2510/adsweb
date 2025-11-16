@@ -1,170 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch – Jujutsu Kaisen Episode</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Watch – Jujutsu Kaisen Episode</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!-- your main stylesheet (keep the CSS we gave earlier) -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Monetag Scripts -->
-    <script src="https://3nbf4.com/act/files/tag.min.js?z=10185413" async></script>
-    <script>(function(s){s.dataset.zone='10185430',s.src='https://nap5k.com/tag.min.js'})(document.body.appendChild(document.createElement('script')))</script>
-    <script>(function(s){s.dataset.zone='10185432',s.src='https://gizokraijaw.net/vignette.min.js'})(document.body.appendChild(document.createElement('script')))</script>
-    <script>(function(s){s.dataset.zone='10185431',s.src='https://groleegni.net/vignette.min.js'})(document.body.appendChild(document.createElement('script')))</script>
+  <!-- Monetag (optional notifications / in-page push) -->
+  <script src="https://3nbf4.com/act/files/tag.min.js?z=10185413" async></script>
+  <script>(function(s){s.dataset.zone='10185430',s.src='https://nap5k.com/tag.min.js'})(document.body.appendChild(document.createElement('script')))</script>
+  <script>(function(s){s.dataset.zone='10185432',s.src='https://gizokraijaw.net/vignette.min.js'})(document.body.appendChild(document.createElement('script')))</script>
+  <script>(function(s){s.dataset.zone='10185431',s.src='https://groleegni.net/vignette.min.js'})(document.body.appendChild(document.createElement('script')))</script>
 
+  <!-- optional small inline CSS to ensure grid spacing if your stylesheet is different -->
+  <style>
+    /* minimal safety styles so layout doesn't break if style.css missing */
+    .page-wrapper { display: grid; grid-template-columns: 220px 1fr 220px; gap:24px; width:95%; max-width:1500px; margin:20px auto; align-items:start; }
+    .side-ads { display:flex; flex-direction:column; gap:20px; }
+    .ad-grid { display:grid; grid-template-columns: 1fr 1fr; gap:16px; justify-items:center; }
+    .ad-box { width:160px; height:600px; background:#f0f0f0; overflow:hidden; }
+    .main-content { background:#fff; padding:20px; border-radius:8px; }
+    .video-wrapper iframe { width:100%; height:460px; border-radius:8px; border:0; display:block; }
+    @media (max-width:1000px) { .page-wrapper { grid-template-columns: 1fr; } .side-ads { display:none; } .video-wrapper iframe { height:320px; } }
+  </style>
 </head>
-
 <body>
 
-<!-- 🔹 TOP BANNER -->
-<div class="top-banner" style="text-align:center;margin-top:10px;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : '0c75e3b4f1f3a67b51aea9f04c67d2c5',
-            'format' : 'iframe',
-            'height' : 60,
-            'width' : 468,
-            'params' : {}
-        };
+  <!-- TOP BANNER -->
+  <div style="text-align:center;margin:14px 0;">
+    <script>
+      atOptions = { 'key':'0c75e3b4f1f3a67b51aea9f04c67d2c5', 'format':'iframe', 'height':60, 'width':468, 'params':{} };
     </script>
     <script src="//www.highperformanceformat.com/0c75e3b4f1f3a67b51aea9f04c67d2c5/invoke.js"></script>
-</div>
+  </div>
 
-
-<!-- 🔹 HEADER -->
-<header class="main-header">
-    <div class="logo">JJK NEWS</div>
+  <!-- HEADER -->
+  <header class="main-header" style="background:#111;color:#fff;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;">
+    <div class="logo" style="font-weight:700">JJK NEWS</div>
     <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="#">Anime</a>
-        <a href="#">Manga</a>
+      <a href="index.html" style="color:#fff;margin-right:18px;text-decoration:none">Home</a>
+      <a href="#" style="color:#fff;margin-right:18px;text-decoration:none">Anime</a>
+      <a href="#" style="color:#fff;text-decoration:none">Manga</a>
     </nav>
     <div class="right-actions">
-        <button id="searchBtn">🔍</button>
-        <button id="menuBtn" class="mobile-menu-btn">☰</button>
+      <button id="searchBtn" style="background:none;border:0;color:#fff;font-size:18px;cursor:pointer">🔍</button>
     </div>
-</header>
+  </header>
 
+  <!-- PAGE GRID: LEFT 2x2 ADS | CENTER CONTENT | RIGHT 2x2 ADS -->
+  <div class="page-wrapper">
 
-<!-- 🔹 MAIN PAGE GRID LAYOUT -->
-<div class="page-grid">
+    <!-- LEFT side 2x2 ad grid -->
+    <aside class="side-ads left-ads" aria-label="Left ads column">
+      <div class="ad-grid" aria-hidden="false">
 
-    <!-- ░ LEFT ADS COLUMN -->
-    <aside class="left-column">
-
-        <div class="ad-160x600">
-            <script>
-                atOptions = {
-                    'key':'d8d8ed9985b6f650bad9a55b1bb77b87',
-                    'format':'iframe',
-                    'height':600,
-                    'width':160,
-                    'params':{}
-                };
-            </script>
-            <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
+        <!-- LEFT AD 1 -->
+        <div class="ad-box">
+          <script type="text/javascript">
+            atOptions = { 'key':'d8d8ed9985b6f650bad9a55b1bb77b87', 'format':'iframe', 'height':600, 'width':160, 'params':{} };
+          </script>
+          <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
         </div>
 
-        <div class="ad-160x600">
-            <script>
-                atOptions = {
-                    'key':'d8d8ed9985b6f650bad9a55b1bb77b87',
-                    'format':'iframe',
-                    'height':600,
-                    'width':160,
-                    'params':{}
-                };
-            </script>
-            <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
+        <!-- LEFT AD 2 -->
+        <div class="ad-box">
+          <script type="text/javascript">
+            atOptions = { 'key':'d8d8ed9985b6f650bad9a55b1bb77b87', 'format':'iframe', 'height':600, 'width':160, 'params':{} };
+          </script>
+          <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
         </div>
 
+        <!-- LEFT AD 3 -->
+        <div class="ad-box">
+          <script type="text/javascript">
+            atOptions = { 'key':'d8d8ed9985b6f650bad9a55b1bb77b87', 'format':'iframe', 'height':600, 'width':160, 'params':{} };
+          </script>
+          <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
+        </div>
+
+        <!-- LEFT AD 4 -->
+        <div class="ad-box">
+          <script type="text/javascript">
+            atOptions = { 'key':'d8d8ed9985b6f650bad9a55b1bb77b87', 'format':'iframe', 'height':600, 'width':160, 'params':{} };
+          </script>
+          <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
+        </div>
+
+      </div>
     </aside>
 
+    <!-- CENTER content -->
+    <main class="main-content" role="main">
 
-    <!-- ░ MAIN VIDEO CONTENT -->
-    <main class="main-content">
+      <h2 style="margin-bottom:14px">Watch – Jujutsu Kaisen Episode</h2>
 
-        <h2>Watch – Jujutsu Kaisen Episode</h2>
+      <!-- video iframe (OK.ru native) -->
+      <div class="video-wrapper" style="margin-bottom:16px;">
+        <iframe src="https://ok.ru/videoembed/10646207990449?nochat=1" allow="autoplay" frameborder="0" allowfullscreen title="Jujutsu Kaisen Episode"></iframe>
+      </div>
 
-        <!-- VIDEO WRAPPER -->
-        <div class="video-wrapper">
-            <iframe
-                src="https://ok.ru/videoembed/10646207990449?nochat=1"
-                allowfullscreen
-                frameborder="0">
-            </iframe>
-        </div>
+      <!-- under-video banner (center) -->
+      <div style="text-align:center;margin:12px 0;">
+        <script>
+          atOptions = { 'key':'0c75e3b4f1f3a67b51aea9f04c67d2c5', 'format':'iframe', 'height':60, 'width':468, 'params':{} };
+        </script>
+        <script src="//www.highperformanceformat.com/0c75e3b4f1f3a67b51aea9f04c67d2c5/invoke.js"></script>
+      </div>
 
-        <!-- AD BELOW VIDEO -->
-        <div class="below-video-ad">
-            <script>
-                atOptions = {
-                    'key':'0c75e3b4f1f3a67b51aea9f04c67d2c5',
-                    'format':'iframe',
-                    'height':60,
-                    'width':468,
-                    'params':{}
-                };
-            </script>
-            <script src="//www.highperformanceformat.com/0c75e3b4f1f3a67b51aea9f04c67d2c5/invoke.js"></script>
-        </div>
+      <h3 style="margin-top:8px">Episode Summary</h3>
+      <p>Yuji, Megumi, and Nobara dive deeper into cursed battles as new villains appear. This episode includes shocking reveals and high-paced action.</p>
 
-        <h3>Episode Summary</h3>
-        <p>Yuji, Megumi, and Nobara dive deeper into cursed battles…</p>
-
-        <p>Sukuna's presence grows stronger…</p>
+      <p style="margin-top:12px;color:#444">Sukuna's presence grows stronger, while Gojo's mysterious backstory takes the spotlight.</p>
 
     </main>
 
+    <!-- RIGHT side 2x2 ad grid -->
+    <aside class="side-ads right-ads" aria-label="Right ads column">
+      <div class="ad-grid">
 
-    <!-- ░ RIGHT ADS COLUMN -->
-    <aside class="right-column">
-
-        <div class="ad-160x600">
-            <script>
-                atOptions = {
-                    'key':'d8d8ed9985b6f650bad9a55b1bb77b87',
-                    'format':'iframe',
-                    'height':600,
-                    'width':160,
-                    'params':{}
-                };
-            </script>
-            <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
+        <!-- RIGHT AD 1 -->
+        <div class="ad-box">
+          <script type="text/javascript">
+            atOptions = { 'key':'d8d8ed9985b6f650bad9a55b1bb77b87', 'format':'iframe', 'height':600, 'width':160, 'params':{} };
+          </script>
+          <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
         </div>
 
-        <div class="ad-160x600">
-            <script>
-                atOptions = {
-                    'key':'d8d8ed9985b6f650bad9a55b1bb77b87',
-                    'format':'iframe',
-                    'height':600,
-                    'width':160,
-                    'params':{}
-                };
-            </script>
-            <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
+        <!-- RIGHT AD 2 -->
+        <div class="ad-box">
+          <script type="text/javascript">
+            atOptions = { 'key':'d8d8ed9985b6f650bad9a55b1bb77b87', 'format':'iframe', 'height':600, 'width':160, 'params':{} };
+          </script>
+          <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
         </div>
 
-        <h3>Related Episodes</h3>
-        <a href="newpage.html" class="sidebar-post">Season 2 Episode 12</a>
-        <a href="#" class="sidebar-post">Season 2 Episode 13</a>
-        <a href="#" class="sidebar-post">Movie Breakdown</a>
+        <!-- RIGHT AD 3 -->
+        <div class="ad-box">
+          <script type="text/javascript">
+            atOptions = { 'key':'d8d8ed9985b6f650bad9a55b1bb77b87', 'format':'iframe', 'height':600, 'width':160, 'params':{} };
+          </script>
+          <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
+        </div>
+
+        <!-- RIGHT AD 4 -->
+        <div class="ad-box">
+          <script type="text/javascript">
+            atOptions = { 'key':'d8d8ed9985b6f650bad9a55b1bb77b87', 'format':'iframe', 'height':600, 'width':160, 'params':{} };
+          </script>
+          <script src="//www.highperformanceformat.com/d8d8ed9985b6f650bad9a55b1bb77b87/invoke.js"></script>
+        </div>
+
+      </div>
+
+      <!-- Related episodes below ads -->
+      <div style="margin-top:18px;">
+        <h4 style="margin-bottom:8px">Related Episodes</h4>
+        <a href="newpage.html" style="display:block;margin:6px 0;color:#111;text-decoration:none">Season 2 Episode 12</a>
+        <a href="#" style="display:block;margin:6px 0;color:#111;text-decoration:none">Season 2 Episode 13</a>
+        <a href="#" style="display:block;margin:6px 0;color:#111;text-decoration:none">Movie 1 Breakdown</a>
+      </div>
 
     </aside>
 
-</div> <!-- END GRID -->
+  </div> <!-- end page-wrapper -->
 
+  <!-- FOOTER -->
+  <footer style="text-align:center;padding:18px 0;background:#111;color:#fff;margin-top:30px">
+    <div>© 2024 JJK NEWS</div>
+  </footer>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p>© 2024 JJK NEWS</p>
-</footer>
-
-
-<!-- POPUNDER -->
-<script>(function(s){s.dataset.zone='10185411',s.src='https://al5sm.com/tag.min.js'})(document.body.appendChild(document.createElement('script')))</script>
+  <!-- Monetag POPUNDER (fires on explicit injection; included here but will only run when user gesture triggers if you add JS) -->
+  <script>(function(s){s.dataset.zone='10185411',s.src='https://al5sm.com/tag.min.js'})(document.body.appendChild(document.createElement('script')))</script>
 
 </body>
 </html>
