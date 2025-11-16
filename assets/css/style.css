@@ -437,3 +437,39 @@ a {
         display: none;
     }
 }
+
+
+/* Three-column layout */
+.page-layout {
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Left & right ads */
+.left-ads .ad-slot,
+.sidebar .sidebar-box {
+    width: 160px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Video area full width */
+.main-content {
+    width: 100%;
+}
+
+/* Hide side ads on mobile */
+@media (max-width: 1200px) {
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+    .left-ads,
+    .sidebar {
+        display: none;
+    }
+}
