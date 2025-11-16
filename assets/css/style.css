@@ -413,3 +413,27 @@ a {
     border: none;
 }
 
+
+
+/* Left Sidebar Ads - FIXED */
+.left-fixed-ads {
+    position: fixed;
+    left: 20px;              /* Adjust how far from left edge */
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 9999;
+}
+
+.left-fixed-ads .ad-box {
+    width: 160px;
+    height: 600px;
+}
+
+/* Hide on mobile */
+@media(max-width: 1200px) {
+    .left-fixed-ads {
+        display: none;
+    }
+}
