@@ -387,3 +387,29 @@ a {
     min-height: 600px;
     background: transparent;
 }
+
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.left-sidebar {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-sidebar-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sidebar-box iframe {
+    width: 160px;
+    height: 600px;
+    border: none;
+}
+
